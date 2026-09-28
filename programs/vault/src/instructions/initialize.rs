@@ -21,6 +21,7 @@ pub struct InitVault<'info> {
         payer = owner,
         token::mint = mint,
         token::authority = vault_state,
+        token::token_program = token_program,
         seeds = [TOKEN_VAULT_SEED, vault_state.key().as_ref()],
         bump
     )]
